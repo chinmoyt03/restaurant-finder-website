@@ -59,9 +59,9 @@
             width: 100%;
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 10;
             background: white;
-            border: 2px solid #f5f1f1;
+            border: 0px solid #f5f1f1;
             border-radius: 0;
             box-sizing: border-box;
             
@@ -987,3 +987,69 @@
                     flex-direction: column;
                 }
             }
+
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 10px;
+                height: auto;
+            }
+            
+            summary {
+                text-align: center;
+                margin-bottom: 20px;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            
+            
+            .category-content {
+                margin-top: 10px;
+            }
+            
+            .category {
+                border: 1px solid #e0e0e0;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+            
+            .category-title {
+                font-weight: bold;
+                margin-bottom: -5px;
+            }
+            
+            .category-items {
+                color: #777;
+                margin-top: 10px;
+            }
+            
+            @media (max-width: 768px) {
+                .category-items {
+                    font-size: 14px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                summary {
+                    font-size: 18px;
+                }
+            
+                .category-items {
+                    font-size: 12px;
+                }
+            }
+            
+            summary {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+            }
+            
+            summary::marker {
+                order: 2;
+            }            
+
